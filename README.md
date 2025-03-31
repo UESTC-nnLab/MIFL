@@ -1,23 +1,18 @@
-# TasaNet: temporal attention and spatial auxiliary network for moving Infrared dim and small target detection
+# Model-Incremental Few-shot Learning with Distribution Alignment Prompts for Infrared Small Target Detection
 
 ## Model
-|![TasaNet](./img/model.jpg)|
+|![TasaNet](./fig/model.pdf)|
 |:--:|
-|*TasaNet*|
+|*MIFL*|
 
-## PR results on the DAUB and IRDST datasets
+## results on IRDST, DAUB and ITSDT datasets
 
-| ![DAUB](./img/PR_1.jpg) |
+| ![DAUB](./fig/vis.pdf) |
 |:--:|
-| *DAUB* |
-
-| ![IRDST](./img/PR_2.jpg) |
-|:--:|
-| *IRDST* |
-
+| *visiualization* |
 
 ## Datasets
-### 1. [DUAB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) and [IRDST](https://xzbai.buaa.edu.cn/datasets.html)
+### 1. [IRDST](https://xzbai.buaa.edu.cn/datasets.html) and [DUAB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) 
 
 ### 2. The COCO format need to convert to txt format.
 ``` python 
@@ -27,22 +22,33 @@ python utils_coco/coco_to_txt.py
 Such as model_data/classes.txt
 
 ## Train
-The hyper-parameters are set in train.py
-```python 
-python tarin.py
+## The base task.
+``` python 
+python train_base.py
 ```
-
+## The second task.
+``` python 
+python train_2.py
+```
+## The more tasks.
+``` python 
+python train_res.py
+```
 ## Evaluate
-The hyper-parameters are set in vid_map_coco.py
+##Evaluate single task
 ```python 
 python vid_map_coco.py
 ```
 
-## Visualization
-The hyper-parameters are setted in vid_predcit.py
+##Evaluate all tasks
 ```python 
-python vid_predcit.py
+python test_incre.py
 ```
+##Evaluate descriptors
+```python 
+python test_descriptor.py
+```
+
 
 ## Reference
 https://github.com/bubbliiiing/yolox-pytorch/
