@@ -1,13 +1,13 @@
 # Model-Incremental Few-shot Learning with Distribution Alignment Prompts for Infrared Small Target Detection
 
 ## Model
-|![TasaNet](./fig/model.pdf)|
+|![MIFL](./Fig/model.pdf)|
 |:--:|
 |*MIFL*|
 
 ## results on IRDST, DAUB and ITSDT datasets
 
-| ![DAUB](./fig/vis.pdf) |
+| ![Vis](./Fig/vis.pdf) |
 |:--:|
 | *visiualization* |
 
