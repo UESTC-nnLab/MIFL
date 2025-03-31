@@ -1,18 +1,19 @@
 # Model-Incremental Few-shot Learning with Distribution Alignment Prompts for Infrared Small Target Detection
 
 ## Model
-|![MIFL](./Fig/model.pdf)|
+|![MIFL](./Fig/model.png)|
 |:--:|
 |*MIFL*|
 
 ## results on IRDST, DAUB and ITSDT datasets
 
-| ![Vis](./Fig/vis.pdf) |
+| ![Vis](./Fig/vis.png) |
 |:--:|
 | *visiualization* |
 
 ## Datasets
-### 1. [IRDST](https://xzbai.buaa.edu.cn/datasets.html) and [DUAB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) 
+### 1. [IRDST](https://xzbai.buaa.edu.cn/datasets.html), [DUAB](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) and [ITSDT](https://www.scidb.cn/en/detail?dataSetId=de971a1898774dc5921b68793817916e&dataSetType=journal)
+
 
 ### 2. The COCO format need to convert to txt format.
 ``` python 
